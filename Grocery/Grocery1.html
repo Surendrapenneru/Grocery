@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMart Grocery Store</title>
+    <link rel="stylesheet" href="grocery2.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>GreenMart</h1>
+        <p>Your Fresh Produce, Just a Click Away</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Featured</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Fresh, Organic, and Sustainable</h2>
+        <p>Explore the best selection of fresh groceries from GreenMart.</p>
+        <button onclick="alert('Welcome to GreenMart!')">Get Started</button>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="apple.jpeg" alt="Organic Apples">
+                <h3>Organic Apples</h3>
+                <p class="price">30 rupees per one</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="carrot.avif" alt="Fresh Carrots">
+                <h3>Fresh Carrots</h3>
+                <p class="price">50 rupees per one KG</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="bread.avif" alt="Whole Wheat Bread">
+                <h3>Whole Wheat Bread</h3>
+                <p class="price">45 each pack</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Our Categories</h2>
+        <div class="category-grid">
+            <div class="category"><a href="fruits.html">Fruits & Vegetables</a></div>
+            <div class="category"><a href="dairy.html">Dairy & Eggs</a></div>
+            <div class="category"><a href="bakery.html">Bakery & Bread</a></div>
+            <div class="category"><a href="snacks.html">Snacks & Beverages</a></div>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? We’d love to hear from you!</p>
+        <p>Email: hello@greenmart.com</p>
+        <p>Phone: +91 9999999999</p>
+        <p>Address: 45 market road jubilee hills, Hyderabad</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Item added to cart!');
+            });
+        });
+    </script>
+</body>
+</html>

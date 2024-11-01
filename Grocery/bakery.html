@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMart - Bakery</title>
+    <style>
+        /* General Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #fff8e1; color: #333; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        header { text-align: center; margin-bottom: 30px; }
+        header h1 { font-size: 2.5em; color: #bf6b04; }
+        header p { font-size: 1.1em; color: #6c757d; }
+        .back-link { display: inline-block; margin-top: 10px; color: #bf6b04; text-decoration: none; font-weight: bold; }
+        
+        /* Bakery List Section */
+        .bakery-list { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; max-width: 1000px; }
+        .bakery-card { background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; width: 200px; text-align: center; transition: transform 0.3s ease; }
+        .bakery-card:hover { transform: translateY(-5px); }
+        .bakery-card img { width: 100%; border-radius: 8px; margin-bottom: 15px; }
+        .bakery-card h2 { font-size: 1.4em; color: #bf6b04; margin-bottom: 10px; }
+        .bakery-card p { font-size: 0.95em; color: #555; margin-bottom: 10px; }
+        .price { font-weight: bold; color: #bf6b04; margin-bottom: 10px; }
+        button { background-color: #bf6b04; color: #fff; padding: 10px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }
+        button:hover { background-color: #8a4d02; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Bakery</h1>
+        <p>Freshly baked bread, pastries, and more</p>
+        <a href="Grocery1.html" class="back-link">Back to Categories</a>
+    </header>
+
+    <!-- Bakery List -->
+    <section class="bakery-list">
+        <div class="bakery-card">
+            <img src="bread.avif" alt="Bread">
+            <h2>Bread</h2>
+            <p>Freshly baked, soft, and delicious bread.</p>
+            <p class="price">50 rupees per pack</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="bakery-card">
+            <img src="cookies.avif" alt="Cookies">
+            <h2>Cookies</h2>
+            <p>Crispy and chocolate-filled cookies.</p>
+            <p class="price">100 rupees per dozen</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="bakery-card">
+            <img src="Croissants.avif" alt="Croissants">
+            <h2>Croissants</h2>
+            <p>Buttery and flaky croissants.</p>
+            <p class="price">100 rupees each</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+</body>
+</html>

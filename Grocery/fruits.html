@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMart - Fruits</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #2d6a4f;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #6c757d;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #2d6a4f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Fruits List Section */
+        .fruits-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+        }
+
+        .fruit-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .fruit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .fruit-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .fruit-card h2 {
+            font-size: 1.4em;
+            color: #2d6a4f;
+            margin-bottom: 10px;
+        }
+
+        .fruit-card p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #2d6a4f;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #2d6a4f;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1b4332;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Fruits</h1>
+        <p>Explore our variety of fresh and organic fruits</p>
+        <a href="Grocery1.html" class="back-link">Back to Categories</a>
+    </header>
+
+    <!-- Fruits List -->
+    <section class="fruits-list">
+        <div class="fruit-card">
+            <img src="apple.jpeg" alt="Apples">
+            <h2>Apples</h2>
+            <p>Fresh, juicy apples perfect for snacks and desserts.</p>
+            <p class="price">30 rupees per one</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fruit-card">
+            <img src="banana.avif" alt="Bananas">
+            <h2>Bananas</h2>
+            <p>Sweet and ripe bananas, full of potassium.</p>
+            <p class="price">100 rupees per dozens</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fruit-card">
+            <img src="oranges.avif" alt="Oranges">
+            <h2>Oranges</h2>
+            <p>Vitamin C-packed oranges for your daily dose of freshness.</p>
+            <p class="price">150 rupees per dozen</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+</body>
+</html>
